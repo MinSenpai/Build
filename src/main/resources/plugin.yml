@@ -1,0 +1,14 @@
+name: PaidCommands
+main: petterim1.paidcommands.PaidCommands
+version: "${pom.version}"
+api: ["1.0.0"]
+author: PetteriM1
+depend: ["EconomyAPI"]
+commands:
+  buycommand:
+    permission: paidcommands.buy
+    usage: "/buycommand"
+    description: "Open the command shop"
+permissions:
+  paidcommands.buy:
+    default: true

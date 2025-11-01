@@ -1,0 +1,43 @@
+# Paid commands
+# Version 1.0
+# Created by PetteriM1
+#
+# Format
+#
+# Commands:
+#   name:
+#     description: "description of what the command includes"
+#     command: "[player|console] some command without / here, use %player% for the player name;[player|console] can be a list with multiple commands"
+#     price: price (decimal)
+#
+Commands:
+  example1:
+    description: "Buy one diamond"
+    command: "[console] give %player% diamond 1"
+    price: 30.0
+  example2:
+    description: "An example"
+    command: "[player] somecommandyouwanttosell"
+    price: 10.5
+  example3:
+    description: "An example with two commands"
+    command: "[player] somecommandyouwanttosell;[console] anothercommandyouwanttosell"
+    price: 50.0
+#
+# Translations
+#
+Translations:
+  shopform.title: "PaidCommands"
+  shopform.content: "§eBuy stuff using in game money"
+  confirmationform.title: "Confirmation"
+  confirmationform.yes: "Yes"
+  confirmationform.no: "No"
+  nomoneyform.title: "Failed"
+  nomoneyform.content: "§cYou don't have enough money to buy this :("
+  confirmationform.price: "Price: "
+  buy.failed: "§cFailed: §e"
+  buy.success: "§aItem bought"
+#
+# Enable logging of payments in the console
+#
+logPayments: false
